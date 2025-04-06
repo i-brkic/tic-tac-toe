@@ -30,3 +30,13 @@ const Gameboard = (function () {
 })();
 
 //
+
+const playerFactory = (name, marker) => {
+  return {
+    playerName: name,
+    playerMarker: marker,
+    checkPlayer() {
+      console.log(this.playerName, this.playerMarker);
+    },
+  };
+};
